@@ -1,3 +1,14 @@
+8/12/18 : React cont.
+  - Basics :
+      - Need to use className in JSX, not class = ''.
+      - Self closing tags (img, br, etc) need to have '/' within tag
+      - When rendering JS within JSX, you need to enclose JS within "{}"
+      - Can use dot notation to refer to an object's properties and set them to variables
+      - JSX event listeners (i.e. onClick) written with camel capitilization. Value should be a function
+      - Don't inject if/then statements into JSX, won't work. 
+      - Visited conditionals, ?: notation and &&
+      - .map(x, i) to create unique keys for list. 
+
 8/9/18 : React 
   - Deeper learning into react, understanding more about DOM & virtual DOM. More understanding about the frustrations with manipulating the DOM. 
   - http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/
