@@ -1,3 +1,7 @@
+8/16/18 : React Authorization Form
+  - Using React to check submit/form seems much easier that using HTML and JS separate. Being able to hide and show text via variables seems more effieicent that having to hide/show entire divs based upon criteria. 
+  - 
+
 8/16/18 : React Components
   - Logic and conditionals must be inside the render() method but outside the return. 
   - Be sure to import respective libraries for React & ReactDOM. 
