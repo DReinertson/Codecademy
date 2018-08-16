@@ -1,3 +1,9 @@
+8/16/18 : React Components
+  - Logic and conditionals must be inside the render() method but outside the return. 
+  - Be sure to import respective libraries for React & ReactDOM. 
+  - I can see how component classes and instances can really clean up code, by rendering variables instead of having a lot of HTML/JS noise. 
+  - You can use this.instance to refer to an instance within the component class. 
+  
 8/12/18 : React cont.
   - Basics :
       - Need to use className in JSX, not class = ''.
