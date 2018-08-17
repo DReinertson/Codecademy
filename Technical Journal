@@ -1,3 +1,9 @@
+8/17/18 : Components interaction
+  - Can have components call upon each other, if on separate files need to export variables (class, object, etc) from other file and import it on current file. 
+  - In example, had a file dedicated to creating a navbar. Navbar had its own class component. Exported class from navbar.js and imported it onto other file. input <NavBar /> into return statement of class component to render a navbar onto the page along with a heading / paragraph. 
+  - Could see how this could be useful in maintaining consistency between pages (Slightly annoying to have to type out Navbar/footer divs on every page of webpage) by exporting class, importing it and rendering it (Especially if there are a great deal of pages that you want to have the same information on it). 
+  - 
+  
 8/16/18 : React Authorization Form
   - Using React to check submit/form seems much easier that using HTML and JS separate. Being able to hide and show text via variables seems more effieicent that having to hide/show entire divs based upon criteria. 
   - 
