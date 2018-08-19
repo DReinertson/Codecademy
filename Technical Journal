@@ -5,6 +5,11 @@
           ** https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/handleevent-onevent-props-event?action=resume_content_item **
   • State: 
       - Accesses dynamic information through props and state.
+      - In-depth look at classes <https://hacks.mozilla.org/2015/07/es6-in-depth-classes/>?
+      - setState({foo : bar}) alters specific key's state based upon the parameter that's within setState(). 
+      - Defining an event handler that uses this needs this.methodName.bind(this). <https://reactjs.org/docs/handling-events.html>
+      - this.setState() automatically calls render()
+      - 
 
 8/17/18 : Components interaction
   - Can have components call upon each other, if on separate files need to export variables (class, object, etc) from other file and import it on current file. 
