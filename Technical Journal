@@ -1,3 +1,11 @@
+8/19/17 : Props & State
+  • Passing prop from component to component, rendered different UI based upon props
+  • Event handler as a prop. 
+      - Names like onClick only create event listeners if they're used on HTML-like JSX elements. Otherwise they're just ordinary prop namnes. I'm more-so confused on what makes Button.js not an HTML-like JSX element but Talker.js is?
+          ** https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/handleevent-onevent-props-event?action=resume_content_item **
+  • State: 
+      - Accesses dynamic information through props and state.
+
 8/17/18 : Components interaction
   - Can have components call upon each other, if on separate files need to export variables (class, object, etc) from other file and import it on current file. 
   - In example, had a file dedicated to creating a navbar. Navbar had its own class component. Exported class from navbar.js and imported it onto other file. input <NavBar /> into return statement of class component to render a navbar onto the page along with a heading / paragraph. 
