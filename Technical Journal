@@ -9,7 +9,8 @@
       - setState({foo : bar}) alters specific key's state based upon the parameter that's within setState(). 
       - Defining an event handler that uses this needs this.methodName.bind(this). <https://reactjs.org/docs/handling-events.html>
       - this.setState() automatically calls render()
-      - 
+  o General thought : 
+      - Thinking about using react and its applicability. If you have a lot of tabs to a website (BAC website), It would be so efficient to just have variables and render components to make webpage look the way it does. Only confusing thing for me is how CSS works with React. It seems like it would be harder to adjust CSS using react as opposed to just HTML.
 
 8/17/18 : Components interaction
   - Can have components call upon each other, if on separate files need to export variables (class, object, etc) from other file and import it on current file. 
