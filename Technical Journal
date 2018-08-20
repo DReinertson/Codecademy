@@ -1,4 +1,8 @@
-8/19/17 : Props & State
+8/19/18 : ReactJS Pt II
+  • Component should NEVER update this.props. React components should use props to store information that can be changed only by a different component.
+  • States should store information that component itself ccan change. 
+
+8/19/18 : Props & State
   • Passing prop from component to component, rendered different UI based upon props
   • Event handler as a prop. 
       - Names like onClick only create event listeners if they're used on HTML-like JSX elements. Otherwise they're just ordinary prop namnes. I'm more-so confused on what makes Button.js not an HTML-like JSX element but Talker.js is?
