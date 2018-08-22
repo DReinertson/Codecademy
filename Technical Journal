@@ -1,5 +1,5 @@
 8/19/18 : ReactJS cont.
-  •
+  • Can't figure out why my video player assignment isn't working. Will continue in the morning. 
 
 8/19/18 : ReactJS Pt II
   • Component should NEVER update this.props. React components should use props to store information that can be changed only by a different component.
