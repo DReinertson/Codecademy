@@ -1,3 +1,6 @@
+8/19/18 : ReactJS cont.
+  •
+
 8/19/18 : ReactJS Pt II
   • Component should NEVER update this.props. React components should use props to store information that can be changed only by a different component.
   • States should store information that component itself ccan change. 
