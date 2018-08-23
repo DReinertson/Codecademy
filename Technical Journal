@@ -1,4 +1,11 @@
-8/19/18 : ReactJS cont.
+8/22/18 : ReactJS cont.
+  • Figured out the problem. Within the Menu.js file within the handleClick(e) property, it was supposed to reference chooseVideo(). I did this.chooseVideo but the correct syntax is this.props.chooseVideo. 
+  • Learned the basics of how parent, child and sibling components interact with each other, stateful vs stateless components and the patterns used by programmers. 
+  • React Styling :
+      - For style Injections, use double curly brackets {{style = background : 'blue'}}
+      - Style names written in camelCase instead of hyphenated-lowercase. margin-top vs marginTop. 
+
+8/21/18 : ReactJS cont.
   • Can't figure out why my video player assignment isn't working. Will continue in the morning. 
 
 8/19/18 : ReactJS Pt II
