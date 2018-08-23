@@ -4,6 +4,9 @@
   • React Styling :
       - For style Injections, use double curly brackets {{style = background : 'blue'}}
       - Style names written in camelCase instead of hyphenated-lowercase. margin-top vs marginTop. 
+  • Separating presentational components from display components :
+      - If a component has to have state, make calculations based on props, or manage any other complex logic, then it shouldn't ALSO have to render HTML-like JSX.
+      
 
 8/21/18 : ReactJS cont.
   • Can't figure out why my video player assignment isn't working. Will continue in the morning. 
