@@ -5,6 +5,10 @@
       - Confused by their files. They said that only one file should render HTML-like jsx, but in the BestSeller.js & BookList.js are rendering it. BUT! Nevermind, BestSeller.js just has an injection using curly brackets. BookList.js is the only file that has <foo /> in it, which is the jsx element. 
   • To stateless functional components
       - Same as to stateful components.
+  • React forms
+      - Want server to know of every character addition/deletion as it occurs, instead of having time-gap where things could be different.
+      - To make a dynamically changing userInput text field
+          o onChange, run property. Have property setState of input to target.value. use constructor to bind this to property. Within HTML use curly brackets to inject this userInput.
 
 8/22/18 : ReactJS cont.
   • Figured out the problem. Within the Menu.js file within the handleClick(e) property, it was supposed to reference chooseVideo(). I did this.chooseVideo but the correct syntax is this.props.chooseVideo. 
