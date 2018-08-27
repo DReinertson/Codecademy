@@ -2,7 +2,7 @@
   • Mounting
       - ComponentWillMount, called first, will only occur after first call
       - Render (Mounting lifecycle methods and updating lifecycle methods).
-      - ComponentDidMount
+      - ComponentDidMount : Good to connect app to external applications (APIs, frameworks). A good place to make AJAX calls. Also where to set timers/intervals
 
 8/26/18 : Props and Proptypes
   • Prop type
