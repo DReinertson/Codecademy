@@ -10,6 +10,10 @@
       - componentWillUpdate : Before render. Interact with things outside of React architecture.
       - render
       - componentDidUpdate(prevProps, prevState) : Usually to interact with things outside React environment (APIs). After render
+  • Unmounting
+      - when component is removed from DOM. 
+      - componentWillUnmount : any methods that require cleanup. 
+  • Complete ReactJS porition**
 
 8/26/18 : Props and Proptypes
   • Prop type
