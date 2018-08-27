@@ -3,6 +3,13 @@
       - ComponentWillMount, called first, will only occur after first call
       - Render (Mounting lifecycle methods and updating lifecycle methods).
       - ComponentDidMount : Good to connect app to external applications (APIs, frameworks). A good place to make AJAX calls. Also where to set timers/intervals
+  • Updating lifecycle methods
+      - Component updates starting with second render.
+      - ComponentWillReceiveProps only gets called if the component will receive props
+      - shouldComponentUpdate
+      - componentWillUpdate
+      - render
+      - componentDidUpdate
 
 8/26/18 : Props and Proptypes
   • Prop type
