@@ -6,8 +6,8 @@
   • Updating lifecycle methods
       - Component updates starting with second render.
       - ComponentWillReceiveProps only gets called if the component will receive props
-      - shouldComponentUpdate
-      - componentWillUpdate
+      - shouldComponentUpdate(nextProps, nextState) : Still before render, after willReceiveProps. 
+      - componentWillUpdate : Before render. Interact with things outside of React architecture.
       - render
       - componentDidUpdate
 
