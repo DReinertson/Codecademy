@@ -9,7 +9,7 @@
       - shouldComponentUpdate(nextProps, nextState) : Still before render, after willReceiveProps. 
       - componentWillUpdate : Before render. Interact with things outside of React architecture.
       - render
-      - componentDidUpdate
+      - componentDidUpdate(prevProps, prevState) : Usually to interact with things outside React environment (APIs). After render
 
 8/26/18 : Props and Proptypes
   • Prop type
