@@ -3,6 +3,8 @@
       - Either search for property named propType or create one (A static variable outside of component declaration).
   • Adding props to propTypes example
       - Confused by their files. They said that only one file should render HTML-like jsx, but in the BestSeller.js & BookList.js are rendering it. BUT! Nevermind, BestSeller.js just has an injection using curly brackets. BookList.js is the only file that has <foo /> in it, which is the jsx element. 
+  • To stateless functional components
+      - Same as to stateful components.
 
 8/22/18 : ReactJS cont.
   • Figured out the problem. Within the Menu.js file within the handleClick(e) property, it was supposed to reference chooseVideo(). I did this.chooseVideo but the correct syntax is this.props.chooseVideo. 
