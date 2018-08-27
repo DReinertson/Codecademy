@@ -1,3 +1,9 @@
+8/26/18 : Lifecycle methods
+  • Mounting
+      - ComponentWillMount, called first, will only occur after first call
+      - Render (Mounting lifecycle methods and updating lifecycle methods).
+      - ComponentDidMount
+
 8/26/18 : Props and Proptypes
   • Prop type
       - Either search for property named propType or create one (A static variable outside of component declaration).
