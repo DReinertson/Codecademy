@@ -1,3 +1,7 @@
+8/30/18 : Reviewing Javascript
+  • Let declares a variable that is explicitly signals that the variable can be reassigned a different value.
+  • Const : Cannot reassign the value. 
+
 8/26/18 : Lifecycle methods
   • Mounting
       - ComponentWillMount, called first, will only occur after first call
