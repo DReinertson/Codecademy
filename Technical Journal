@@ -1,6 +1,6 @@
 9/4/18 : Interactive Websites with Javascript
   • Reviewing what I have learned in the past about parent/child components within html
-  •
+  • Just reviewed document.appendChild(). This could be a way to incorporate a post into a blog for a user.
 8/30/18 : Reviewing Javascript
   • Let declares a variable that is explicitly signals that the variable can be reassigned a different value.
   • Const : Cannot reassign the value. 
