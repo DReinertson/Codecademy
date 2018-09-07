@@ -104,6 +104,7 @@ const startRound = () =>{
 }
 
 startButton.onclick = () =>{
-  console.log('clicked');
+  if (currentlyPlaying === false){
   startRound();
+  }
 }
