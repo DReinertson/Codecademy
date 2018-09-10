@@ -5,6 +5,8 @@
       - Static : Default 
       - Relative : Position element relative to its static position on webpage. 
           o Four offset properties : top, bottom, left, right. 
+      - Absolute : All other elements will ignore this element and act like it is not on page. 
+      - Fixed : 'fix' element to specific position on the page, regardless of scrolling. 
 
 9/4/18 : Interactive Websites with Javascript
   • Reviewing what I have learned in the past about parent/child components within html
