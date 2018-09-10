@@ -11,6 +11,7 @@
   • Display (Inline, block, inline-block)
       - Inline : Always be displayed on the same line as surrounding text, cannot alter with width/height properties. 
       - Inline-block : Will appear next to each other, but can alter size with CSS properties. 
+      - Clear : Depicts how elements will react when bumped into each other. Valid values are left, right, both, none. 
 
 9/4/18 : Interactive Websites with Javascript
   • Reviewing what I have learned in the past about parent/child components within html
