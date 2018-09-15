@@ -25,21 +25,10 @@ p {
   font-weight: 100;
 }
 
-span {
-  font-size: .8em;
-}
-
 #gameboard {
   position: relative;
   top: 30px;
 }
-
-#gamecard {
-  background-color: blue;
-  opacity: .5;
-  font-size: 2em;
-}
-
 .card {
   border: 2px solid #9DD1F1;
   display: inline-block;
@@ -51,12 +40,4 @@ span {
 
 .card img {
   padding-top: 40px;
-}
-
-.card a {
-  background-color: #9DD1F1;
-  border-radius: 3px;
-  color: #004E89;
-  padding: 12px;
-  text-transform: uppercase;
 }
