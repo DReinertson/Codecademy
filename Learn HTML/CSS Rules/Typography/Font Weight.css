@@ -76,7 +76,6 @@ a.home {
   padding: 100px 0;
   margin-top: 77px;
   text-align: center;
-  font-weight: bold;
 }
 
 .banner p {
@@ -84,6 +83,8 @@ a.home {
   border-bottom: 1px solid #fff;
   padding: 10px;
   color: #ffffff;
+  
+  font-weight: bold;
 }
 
 /* Editorial Sections */
