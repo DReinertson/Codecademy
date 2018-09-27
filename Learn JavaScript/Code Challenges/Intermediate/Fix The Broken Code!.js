@@ -7,11 +7,11 @@ const smallestPowerOfTwo = arr => {
             number = arr[i];
 
             // The 'inner' while loop - searches for smallest power of 2 greater than the given number
-            i = 1;
-            while (i < number) {
-                  i = i * 2;
+            let x = 1;
+            while (x < number) {
+                  x = x * 2;
             }
-            results.push(i);
+            results.push(x);
       }
       return results
 }
