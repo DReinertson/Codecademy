@@ -9,7 +9,9 @@
           o setters and getters to change properties values. 
       - Getters:
           o get and return internal properties of object. 
-          o
+      - Setters:
+          o set property values. 
+      - Still not sure when to use paranthesis when accessing object methods. 
 
 9/9/18 : Display and positioning
   • Block-level elements
