@@ -4,6 +4,12 @@
   • Will continue with Advanced Object lessons:
       - don't use semi-colons when declaring properties of object. 
       - arrow functions within objects, 'this' refers to global object, don't use arrow functions with object literals. 
+      - Privacy: 
+          o placing uderscore before property = don't alter. 
+          o setters and getters to change properties values. 
+      - Getters:
+          o get and return internal properties of object. 
+          o
 
 9/9/18 : Display and positioning
   • Block-level elements
