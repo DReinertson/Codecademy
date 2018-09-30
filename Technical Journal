@@ -1,6 +1,7 @@
 9/30/18 : Templating with handlebars
   • Library which is meant for reusable html/js
   • Put within the script tag the text that is going to be changed via variables in the js file. That text will traverse the DOM into the JS file, compiled within js and then rendered into a different id, creating the altered text you see. 
+  • Looks like each tag using handlebars will use double curly brackets {{}}, with a variable inside. If it is using a statement, if/each/else/etc, It will use hashtag before the statement. 
 
 9/26/18 : Hiatus
   • Took long hiatus from documenting the lessons that i've gone through. Have been reviewing lessons, making sure parts that the parts that I was comfortable with were really engraved into muscle memory and also to make sure there wasn't anything that I was missing (which there was of course).  
