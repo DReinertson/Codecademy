@@ -1,3 +1,5 @@
+10/2/18 : jQuery
+  • Add JS script tag after the closing </body> tag, to ensure it won't affect HTML structure / CSS
 9/30/18 : Templating with handlebars
   • Library which is meant for reusable html/js
   • Put within the script tag the text that is going to be changed via variables in the js file. That text will traverse the DOM into the JS file, compiled within js and then rendered into a different id, creating the altered text you see. 
