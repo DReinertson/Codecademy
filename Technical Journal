@@ -1,5 +1,6 @@
 10/3/18 : jQuery cont.
   • Using jQuery methods. Have learned how to target elements with either class / id and started using basic methods. This includes .show(), .hide(), .toggle(), .fadeIn(), .fadeOut(), .fadeToggle()...etc
+  • Group all style code in CSS file and add/remove CSS classes from element using jQuery : SEPARATION OF CONCERNS
   
 10/2/18 : jQuery
   • Add JS script tag after the closing </body> tag, to ensure it won't affect HTML structure / CSS
