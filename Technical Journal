@@ -1,3 +1,8 @@
+10/10/18 : Javascript
+  •When creating class that extends parent class : 
+      - within constructor, if you are using properties in parent class as well:
+          o Make sure that the properites are at the same 'index' of arguments and make sure that when using super(), all arguments go within single super call.
+
 10/3/18 : jQuery cont.
   • Using jQuery methods. Have learned how to target elements with either class / id and started using basic methods. This includes .show(), .hide(), .toggle(), .fadeIn(), .fadeOut(), .fadeToggle()...etc
   • Group all style code in CSS file and add/remove CSS classes from element using jQuery : SEPARATION OF CONCERNS
