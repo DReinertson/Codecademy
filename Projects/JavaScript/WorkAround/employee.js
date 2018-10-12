@@ -10,7 +10,7 @@ Employee.payGrades = {
   seniorLevel: { taxMultiplier: .2, benefits: ['health', 'housing', 'wellness', 'gym'], minSalary: 100000, maxSalary: 200000 }
 };
 
-Employee.getCadre = function(){
+export function getCadre(){
   if (Employee.salary >= Employee.payGrades.entryLevel.minSalary && Employee.salary <= Employee.payGrades.entryLevel.maxSalary) {
     return 'entryLevel';
   } else if (Employee.salary >= Employee.payGrades.midLevel.minSalary && Employee.salary <= Employee.payGrades.midLevel.maxSalary) {
@@ -18,22 +18,22 @@ Employee.getCadre = function(){
   } else return 'seniorLevel';
 }
 
-Employee.calculateTax = function() {
-  return Employee.payGrades[Employee.getCadre()].taxMultiplier * Employee.salary;
+export function calculateTax() {
+  return Employee.payGrades[getCadre()].taxMultiplier * Employee.salary;
 }
 
-Employee.getBenefits = function() {
-  return Employee.payGrades[Employee.getCadre()].benefits.join(', ');
+export function getBenefits() {
+  return Employee.payGrades[getCadre()].benefits.join(', ');
 }
 
-Employee.calculateBonus = function() {
+export function calculateBonus() {
   return .02 * Employee.salary;
 }
 
-Employee.reimbursementEligibility = function() {
+export function reimbursementEligibility() {
   let reimbursementCosts = { health: 5000, housing: 8000, wellness: 6000, gym: 12000 };
   let totalBenefitsValue = 0; 
-  let employeeBenefits = Employee.payGrades[Employee.getCadre()].benefits;
+  let employeeBenefits = Employee.payGrades[getCadre()].benefits;
   for (let i = 0; i < employeeBenefits.length; i++) {
     totalBenefitsValue += reimbursementCosts[employeeBenefits[i]];
   }
