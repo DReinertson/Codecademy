@@ -1,5 +1,10 @@
+10/13/18 : Requests
+  • 4 Most common types: GET, POST, PUT, DELETE 
+  • Created a rebrandly account, will create custom API to coordinate with my codecademy work
+  •
+  •
 10/10/18 : Javascript
-  •When creating class that extends parent class : 
+  • When creating class that extends parent class : 
       - within constructor, if you are using properties in parent class as well:
           o Make sure that the properites are at the same 'index' of arguments and make sure that when using super(), all arguments go within single super call.
 
