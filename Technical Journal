@@ -1,7 +1,7 @@
 10/13/18 : Requests
   • 4 Most common types: GET, POST, PUT, DELETE 
   • Created a rebrandly account, will create custom API to coordinate with my codecademy work
-  •
+  • GET mainly used for retrieving data while POST involves storing/updating data, ordering, sending e-mail.
   •
 10/10/18 : Javascript
   • When creating class that extends parent class : 
