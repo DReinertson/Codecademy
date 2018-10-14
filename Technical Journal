@@ -1,8 +1,14 @@
+10/14/18 : Promises
+  • used fetch() to make GET and POST requests, check status of responses, catch errors, rendering successful responses onto webpage
+  • async GET requests:
+      - using await, try...catch
+  •
+  •
 10/13/18 : Requests
   • 4 Most common types: GET, POST, PUT, DELETE 
   • Created a rebrandly account, will create custom API to coordinate with my codecademy work
   • GET mainly used for retrieving data while POST involves storing/updating data, ordering, sending e-mail.
-  •
+  
 10/10/18 : Javascript
   • When creating class that extends parent class : 
       - within constructor, if you are using properties in parent class as well:
