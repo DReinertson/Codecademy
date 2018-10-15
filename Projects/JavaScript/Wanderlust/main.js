@@ -60,6 +60,8 @@ const getForecast = async () => {
     if(response.ok){
       const jsonResponse = await response.json();
       console.log(jsonResponse);
+      const days = jsonResponse.forecase.forecastday;
+      return days
     }
   }
   catch(error){
@@ -72,7 +74,9 @@ const getForecast = async () => {
 const renderVenues = (venues) => {
   $venueDivs.forEach(($venue, index) => {
     // Add your code here:
-
+    const venue = venues[index];
+    const venueIcon = venue.categories[0].icon;
+    const venueImgSrc = venueIcon.previx + 'bg_64' + venueIcon.suffix;
     let venueContent = '';
     $venue.append(venueContent);
   });
