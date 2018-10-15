@@ -1,3 +1,4 @@
+
 // Foursquare API Info
 const clientId = 'QRTMAEMLVSOSZNU5ISWABQ5PIQIEYSLWOXJEO2K3YKKMDJY5';
 const clientSecret = '4GTMNASYVDFXXKKXNR2XNPXFOTPM1GT12GTVJPVS04I33LUO';
@@ -76,8 +77,8 @@ const renderVenues = (venues) => {
     // Add your code here:
     const venue = venues[index];
     const venueIcon = venue.categories[0].icon;
-    const venueImgSrc = venueIcon.previx + 'bg_64' + venueIcon.suffix;
-    let venueContent = '';
+    const venueImgSrc = venueIcon.prefix + 'bg_64' + venueIcon.suffix;
+    let venueContent = createVenueHTML(venue.name, venue.location, venueImgSrc);
     $venue.append(venueContent);
   });
   $destination.append(`<h2>${venues[0].location.city}</h2>`);
@@ -86,9 +87,10 @@ const renderVenues = (venues) => {
 const renderForecast = (days) => {
   $weatherDivs.forEach(($day, index) => {
     // Add your code here:
+    
 
 
-    let weatherContent = '';
+    let weatherContent = createWeatherHTML(currentDay);
     $day.append(weatherContent);
   });
 }
@@ -99,7 +101,8 @@ const executeSearch = () => {
   $destination.empty();
   $container.css("visibility", "visible");
   getVenues()
-  getForecast()
+  getForecast().then(forecast =>
+    renderForecast(forecast));
   return false;
 }
 
