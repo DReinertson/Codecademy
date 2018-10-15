@@ -18,7 +18,7 @@ const $venueDivs = [$("#venue1"), $("#venue2"), $("#venue3"), $("#venue4")];
 const $weatherDivs = [$("#weather1"), $("#weather2"), $("#weather3"), $("#weather4")];
 const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-const formatDate = () =>{
+/*const formatDate = () =>{
   const todayDate = new Date();
   let month = todayDate.getMonth();
   if(month < 10){
@@ -32,7 +32,29 @@ const formatDate = () =>{
   const fullDate = `${year}${month}${day}`
   return fullDate;
 }
+*/
+
+const today = new Date();
+today.month = today.getMonth();
+today.year = today.getFullYear();
+today.day = today.getDate();
+
+const formatDate = () =>{
+  let month = today.month;
+  if(month < 10){
+    month = "0" + month;
+  };
+  const year = today.year;
+  let day = today.day;
+  if(day < 10){
+    day = "0" + day;
+  };
+  const fullDate = `${year}${month}${day}`;
+  return fullDate;
+}
+
 const date = formatDate();
+
 
 // Add AJAX functions here:
 const getVenues = async() => {
@@ -87,7 +109,8 @@ const renderVenues = (venues) => {
 const renderForecast = (days) => {
   $weatherDivs.forEach(($day, index) => {
     // Add your code here:
-    
+    const currentDay = weekDays[date.day]
+    console.log('currentDay', currentDay);
 
 
     let weatherContent = createWeatherHTML(currentDay);
