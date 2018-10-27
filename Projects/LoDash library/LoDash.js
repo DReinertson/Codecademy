@@ -22,7 +22,29 @@ let _ = {
     default:
     	return num;
       break;
-  }
+  }*/
+  inRange(num, start, end){
+    
+    if (end === undefined){
+      end = start;
+      start = 0;
+    }
+    
+    if(start > end){
+      let tempstart = start;
+      let tempend = end;
+      start = tempend;
+      end = tempstart;
+    }
+    
+    if(num >= start && num <= end){
+      return true;
+    }
+    else{
+      return false;
+    }
+  },
+  
 };
 
 
