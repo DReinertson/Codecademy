@@ -45,6 +45,10 @@ let _ = {
     }
   },
   
+  words (str) {
+    let arr = str.split(' ');
+    return arr;
+  },
 };
 
 
