@@ -91,7 +91,49 @@ let _ = {
     }
     console.log(newObj)
     return newObj;
+  }, 
+  
+  findKey(obj, func){
+    for (x in obj){
+      if (func(obj[x])){
+        return x;
+      }
+      return undefined;
+    }
+  },
+  //Tried following directions of splice(0,1) to remove first element, but instead returned the first two elements of previous array. Was working how I understand arr.slice() to work. 
+  drop(arr, num){
+    console.log('arrStart:', arr);
+    if(num === undefined){
+      arr = arr.splice(1, arr.length);
+      return arr;
+    }
+    else{
+      console.log('num provided');
+      arr = arr.splice(num, arr.length);
+      return arr;
+    }
+  },
+  
+  dropWhile(arr, func){
+    let dropNumber = arr.findIndex(function(element, index){
+      return !func(element, index, arr);
+    });
+    let droppedArray = this.drop(arr, dropNumber);
+    return droppedArray;
+  },
+  
+  chunk(arr, size){
+    if (size === undefined){
+      size = 1;
+    }
+    let newArr = [];
+    for(x = 0; x < arr.length; x += size){
+      newArr.push(arr.slice(x, x+size));
+    }
+    return newArr;
   }
+  
   
 };
 
