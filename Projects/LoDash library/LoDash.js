@@ -12,7 +12,8 @@ let _ = {
     };
   },
   //In switch statement, not sure which is more efficient. 
-  /*switch(num) {
+  /*
+  switch(num) {
   	case (num < low):
     	return low;
       break;
@@ -22,7 +23,8 @@ let _ = {
     default:
     	return num;
       break;
-  }*/
+  }
+  */
   inRange(num, start, end){
     
     if (end === undefined){
@@ -49,6 +51,28 @@ let _ = {
     let arr = str.split(' ');
     return arr;
   },
+  
+  pad(str, len){
+    const space = ' ';
+    if (str.length > len){
+      return str;
+    }
+    let padStart = (Math.floor((len - str.length) / 2))
+    let padEnd = len - (str.length + padStart);
+    
+    let paddedString = space.repeat(padStart) + str;
+    paddedString += space.repeat(padEnd)
+    /*Using for loops
+    for (let x = 0; x < padStart; x++){
+      str = ' ' + str;
+    }
+    for (let y = 0; y < padEnd; y++){
+      str += ' ';
+    }
+    */
+    return paddedString;
+  },
+  
 };
 
 
