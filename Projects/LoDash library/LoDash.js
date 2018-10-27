@@ -73,6 +73,26 @@ let _ = {
     return paddedString;
   },
   
+  has (obj, key){
+    if(obj.key === undefined){
+      return false;
+    }
+    if(obj.key){
+      return true;
+    }
+    return false;
+  }, 
+  
+  invert(obj){
+    let newObj = {};
+    for (x in obj){
+      let origVal = obj[x];
+      newObj[origVal] = x;
+    }
+    console.log(newObj)
+    return newObj;
+  }
+  
 };
 
 
