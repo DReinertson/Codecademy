@@ -1,3 +1,7 @@
+10/28/18 : SQL
+  • Clauses perform specific tasks in SQL
+  • * : select every column
+
 10/14/18 : Promises
   • used fetch() to make GET and POST requests, check status of responses, catch errors, rendering successful responses onto webpage
   • async GET requests:
