@@ -1,15 +1,24 @@
 const Twitter = {};
 
-const oauthConsumerKey = ''; // Generated from apps.twitter.com
-const oauthConsumerSecret = ''; // Generated from Keys and Access Tokens on apps.twitter.com
-const oauthToken = ''; // Generated from Keys and Access Tokens on apps.twitter.com
-const oauthTokenSecret = ''; // Generated from Keys and Access Tokens on apps.twitter.com
+const oauthConsumerKey = 'dDn5z8bAEEN1EamVKxHcDu7Uq '; // Generated from apps.twitter.com
+const oauthConsumerSecret = 'gqsMWXMr94yZ2nwrik91aNEG3VDJcCCj5g760177RgtJItKOpz '; // Generated from Keys and Access Tokens on apps.twitter.com
+const oauthToken = '216893013-A3P1h8rhcSR7iXTKcNt7mFwxQEE8B0DMEMefXeFx'; // Generated from Keys and Access Tokens on apps.twitter.com
+const oauthTokenSecret = 'HxE3peRxVGiWYgkjhnXtpnkMJjJxd9yEUEhcOM2UW6Qs6 '; // Generated from Keys and Access Tokens on apps.twitter.com
 const oauthSignatureMethod = 'HMAC-SHA1';
 const oauthVersion = '1.0';
 const baseUrl = 'https://api.twitter.com/1.1/statuses/update.json';
 
 // Post Status Function
-
+Twitter.postStatus = async (status) =>{
+  let resposne = await fetch(`https://cors-anywhere.herokuapp.com/${baseUrl}?status=${encodeData(status)}`,{
+    method:'POST',
+    headers: {
+      Authorization:Twitter.generateAuthorizationHeader(status);
+    }
+  });
+  let jsonResponse = await response.json();
+  console.log(jsonResponse);
+};
 // Helper Functions
 
 Twitter.generateAuthorizationHeader = (status) => {
