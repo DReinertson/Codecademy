@@ -12,6 +12,7 @@ const engadgetUrl = 'https://newsapi.org/v2/top-headlines?sources=engadget&apiKe
 const recodeUrl = 'https://newsapi.org/v2/top-headlines?sources=recode&apiKey=a2807597ceae4f17b0f2e4fe85667365';
 const nextWebUrl = 'https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=a2807597ceae4f17b0f2e4fe85667365';
 
+
 // Request News Function
 const getNews = async(url) => {
   let response = await fetch(url)
@@ -50,7 +51,7 @@ function sendTweets(newsObjects) {
   let tweetButtons = document.getElementsByClassName('tweet');
   for (let i = 0; i < tweetButtons.length; i++) {
     tweetButtons[i].addEventListener('click', function() {
-      // Call Post Status function here
+      Twitter.postStatus(newsObjects[i].url);
       tweetButtons[i].innerHTML = "Tweeted";
     }, false);
   }
@@ -63,18 +64,24 @@ engadget.addEventListener('click', function() {
   // Call getNews() here
   getNews(engadgetUrl).then(articlesArray =>
     renderNews(articlesArray));
-}, false);
+}, false).then(articles => {
+  sendTweets(articles);
+});
 
 recode.addEventListener('click', function() {
   main.innerHTML = ' ';
   // Call getNews() here
   getNews(recodeUrl).then(articlesArray => 
     renderNews(articlesArray));
-}, false);
+}, false).then(articles => {
+  sendTweets(articles);
+});
 
 nextWeb.addEventListener('click', function() {
   main.innerHTML = ' ';
   // Call getNews() here
   getNews(nextWebUrl).then(articlesArray =>
     renderNews(articlesArray));
-}, false);
+}, false).then(articles => {
+  sendTweets(articles);
+});
