@@ -1,0 +1,11 @@
+ls revisited: 
+
+     - can add one or more options to end of ls
+     - a : shows hidden files/directories as well
+     - l : in long format
+     - t : orders files/directories by last modified date
+     - cp : copy files or directories. Can add directory after files, will copy files into that directory
+     - * : select all files. can add options to it. *m.txt will choose all text files that start with m. 
+     - mv : move files. Add parameter to put file into directory. If you do two files, it will rename the first parameter with second's name. 
+     - rm : delete files / directories
+          o -r modifies rm, recursive, delete directory and all children
