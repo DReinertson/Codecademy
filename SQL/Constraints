@@ -1,0 +1,4 @@
+Primary key : uniquely identifies row. Error will occur if row with same name is attepmpted to add. 
+Unique : Unique value for each row. Can have multiple. 
+Not null : columns must have a value
+Default : columns take an additional argument that will be the assumed value for an inserted row if the new row does not specify a value for that column.
