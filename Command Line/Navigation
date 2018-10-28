@@ -1,0 +1,5 @@
+ls : list files and folders in file currently in
+pwd : print working directory.
+cd : change directory
+    - .. go back folder
+touch : creates new file within directory
