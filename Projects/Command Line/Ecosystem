@@ -1,0 +1,240 @@
+$ ls -alt
+total 44
+drwxr-xr-x 3 ccuser ccuser  39 Oct 29 02:03 ..
+drwxr-xr-x 2 ccuser ccuser 202 Mar  7  2016 .
+-rw-r--r-- 1 ccuser ccuser 240 Mar  3  2016 fish.txt
+-rw-r--r-- 1 ccuser ccuser 298 Mar  3  2016 flowers.txt
+-rw-r--r-- 1 ccuser ccuser 245 Mar  3  2016 fungi.txt
+-rw-r--r-- 1 ccuser ccuser 312 Mar  3  2016 insects.txt
+-rw-r--r-- 1 ccuser ccuser 454 Mar  3  2016 mammals.txt
+-rw-r--r-- 1 ccuser ccuser 333 Mar  3  2016 mosses.txt
+-rw-r--r-- 1 ccuser ccuser 503 Mar  3  2016 plants.txt
+-rw-r--r-- 1 ccuser ccuser 292 Mar  3  2016 rocks.txt
+-rw-r--r-- 1 ccuser ccuser 256 Mar  3  2016 soils.txt
+-rw-r--r-- 1 ccuser ccuser 353 Mar  3  2016 streams.txt
+-rw-r--r-- 1 ccuser ccuser 670 Mar  3  2016 trees.txt
+$ cat rocks.txt
+
+In geology, rock or stone is a naturally occurring solid aggregate of one or more minerals or
+mineraloids. For example, the common rock granite is a combination of the quartz, feldspar and
+ biotite minerals. The Earth's outer solid layer, the lithosphere, is made of rock.
+
+Source: Wikipedia
+$ cat rocks.txt > mosses.txt
+$ cat mosses.txt
+In geology, rock or stone is a naturally occurring solid aggregate of one or more minerals or
+mineraloids. For example, the common rock granite is a combination of the quartz, feldspar and
+ biotite minerals. The Earth's outer solid layer, the lithosphere, is made of rock.
+
+Source: Wikipedia
+$ -l wc < cat plants.txt
+bash: cat: No such file or directory
+$ -l wc < plants.txt
+bash: -l: command not found
+$ wc -l < plants.txt
+5
+$ cat streams.txt >> plants.txt
+$ cat plants.txt
+
+Plants are one of five big groups (kingdoms) of living things. They are autotrophic eukaryotes
+, which means they have complex cells, and make their own food. Usually they cannot move (not
+counting growth).
+
+Plants include familiar types such as trees, herbs, bushes, grasses, vines, ferns, mosses, and
+ green algae. The scientific study of plants, known as botany, has identified about 350,000 ex
+tant (living) species of plants. Fungi and non-green algae are not classified as plants.
+Source: Wikipedia
+A stream is a body of water[1] with a current, confined within a bed and stream banks. Dependi
+ng on its location or certain characteristics, a stream may be referred to as a branch, brook,
+ beck, burn, creek, crick, gill (occasionally ghyll), kill, lick, mill race, rill, river, syke
+, bayou, rivulet, streamage, wash, run, or runnel.
+
+Source: Wikipedia
+$ cat plants.txt >> trees.txt
+$ cat trees.txt
+
+In botany, a tree is a perennial plant with an elongated stem, or trunk, supporting branches a
+nd leaves in most species. In some usages, the definition of a tree may be narrower, including
+ only woody plants with secondary growth, plants that are usable as lumber or plants above a s
+pecified height. Trees are not a taxonomic group but include a variety of plant species that h
+ave independently evolved a woody trunk and branches as a way to tower above other plants to c
+ompete for sunlight. In looser senses, the taller palms, the tree ferns, bananas and bamboos a
+re also trees. Trees tend to be long-lived, some reaching several thousand years old.
+
+Source: Wikipedia
+Plants are one of five big groups (kingdoms) of living things. They are autotrophic eukaryotes
+, which means they have complex cells, and make their own food. Usually they cannot move (not
+counting growth).
+
+Source: Wikipedia
+A stream is a body of water[1] with a current, confined within a bed and stream banks. Dependi
+ng on its location or certain characteristics, a stream may be referred to as a branch, brook,
+ beck, burn, creek, crick, gill (occasionally ghyll), kill, lick, mill race, rill, river, syke
+, bayou, rivulet, streamage, wash, run, or runnel.
+
+Source: Wikipedia
+$ ls -l | head > list1.txt
+$ cat list1.txt
+total 44
+-rw-r--r-- 1 ccuser ccuser  240 Mar  3  2016 fish.txt
+-rw-r--r-- 1 ccuser ccuser  298 Mar  3  2016 flowers.txt
+-rw-r--r-- 1 ccuser ccuser  245 Mar  3  2016 fungi.txt
+-rw-r--r-- 1 ccuser ccuser  312 Mar  3  2016 insects.txt
+-rw-r--r-- 1 ccuser ccuser    0 Oct 29 02:08 list1.txt
+-rw-r--r-- 1 ccuser ccuser  454 Mar  3  2016 mammals.txt
+-rw-r--r-- 1 ccuser ccuser  292 Oct 29 02:06 mosses.txt
+-rw-r--r-- 1 ccuser ccuser  856 Oct 29 02:08 plants.txt
+-rw-r--r-- 1 ccuser ccuser  292 Mar  3  2016 rocks.txt
+$ ls -la | head >> list1.txt | wc
+      0       0       0
+$ cat list1.txt
+total 44
+-rw-r--r-- 1 ccuser ccuser  240 Mar  3  2016 fish.txt
+-rw-r--r-- 1 ccuser ccuser  298 Mar  3  2016 flowers.txt
+-rw-r--r-- 1 ccuser ccuser  245 Mar  3  2016 fungi.txt
+-rw-r--r-- 1 ccuser ccuser  312 Mar  3  2016 insects.txt
+-rw-r--r-- 1 ccuser ccuser    0 Oct 29 02:08 list1.txt
+-rw-r--r-- 1 ccuser ccuser  454 Mar  3  2016 mammals.txt
+-rw-r--r-- 1 ccuser ccuser  292 Oct 29 02:06 mosses.txt
+-rw-r--r-- 1 ccuser ccuser  856 Oct 29 02:08 plants.txt
+-rw-r--r-- 1 ccuser ccuser  292 Mar  3  2016 rocks.txt
+total 48
+drwxr-xr-x 2 ccuser ccuser  219 Oct 29 02:08 .
+drwxr-xr-x 3 ccuser ccuser   39 Oct 29 02:03 ..
+-rw-r--r-- 1 ccuser ccuser  240 Mar  3  2016 fish.txt
+-rw-r--r-- 1 ccuser ccuser  298 Mar  3  2016 flowers.txt
+-rw-r--r-- 1 ccuser ccuser  245 Mar  3  2016 fungi.txt
+-rw-r--r-- 1 ccuser ccuser  312 Mar  3  2016 insects.txt
+-rw-r--r-- 1 ccuser ccuser  511 Oct 29 02:08 list1.txt
+-rw-r--r-- 1 ccuser ccuser  454 Mar  3  2016 mammals.txt
+-rw-r--r-- 1 ccuser ccuser  292 Oct 29 02:06 mosses.txt
+$ sort mammals.txt
+
+American Beaver
+American Beaver
+Bat
+Bison
+Bison
+Black-tailed Prairie Dog
+Black-tailed Prairie Dog
+Black-tailed Prairie Dog
+Black-tailed Prairie Dog
+Bobcat
+Caribou
+Caribou
+Chipmunk
+Chipmunk
+Deer
+Dusky-footed Woodrat
+Flying Squirrel
+Gopher
+Grizzly Bear
+Grizzly Bear
+Moose
+Moose
+Nine-banded Armadillo
+North American River Otter
+Opossum
+Opossum
+Opossum
+Opossum
+Opossum
+Rabbit
+Rabbit
+Raccoon
+Raccoon
+Red
+Red Fox
+Skunk
+Squirrel
+Wolverine
+Wolverine
+Wolverine
+$ sort mammals.txt | uniq
+
+American Beaver
+Bat
+Bison
+Black-tailed Prairie Dog
+Bobcat
+Caribou
+Chipmunk
+Deer
+Dusky-footed Woodrat
+Flying Squirrel
+Gopher
+Grizzly Bear
+Moose
+Nine-banded Armadillo
+North American River Otter
+Opossum
+Rabbit
+Raccoon
+Red
+Red Fox
+Skunk
+Squirrel
+Wolverine
+$ sort flowers.txt | uniq > uniq-flowers.txt
+$ cat uniq-flowers.txt
+
+Apple Blossom
+Azalea
+Bitterroot
+California poppy
+Camellia
+Flowering dogwood
+Forget-me-not
+Hawthorn
+Large white trillium
+Magnolia
+Oak-leaf hydrangea
+Oklahoma rose
+Peach Blossom
+Peony
+Purple lilac
+Red clover
+Rhododendron
+Sunflower
+Violet
+White pine cone and tassel
+Wood violet
+Yucca Flower
+$ grep Mushroom fungi.txt
+Oyster Mushroom
+Caesar's Mushroom
+Horse Mushroom
+Pinewood Mushroom
+$ grep -i Mushroom fungi.txt
+Gypsy mushroom
+Oyster Mushroom
+Caesar's Mushroom
+Horse Mushroom
+Pinewood Mushroom
+$ grep -Rl tree ecosystem/
+grep: ecosystem/: No such file or directory
+$ pwd
+/home/ccuser/workspace/ecosystem
+$ grep -RL tree ecosystem
+grep: ecosystem: No such file or directory
+$ grep -Rl tree /ecosystem/
+grep: /ecosystem/: No such file or directory
+$ grep -Rl tree .
+./plants.txt
+./trees.txt
+$ sed 's/dirt/soils.' soils.txt
+sed: -e expression #1, char 13: unterminated `s' command
+$ sed 's/Dirt/Soils/' soils.txt
+
+Tundra Soils
+Podzol Soils
+Brown Forest Soils
+Lateritic/Latosol/Ferralsol Soils
+Chernozem/Prairie/Steppe Soils
+Grumusols/ Reddish Brown Soils
+Desert (Seirozems and Red Desert) Soils
+Intrazonal Soils
+Hydromorphic Soils
+Calcimorphic Soils
+Halomorphic Soils
+Azonal Soils
