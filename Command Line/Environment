@@ -1,0 +1,10 @@
+Nano : to get into nano text editor. Nano fileName
+bash_profile : when session starts, will load contents of bash profile before executing commands. 
+source : makes changes available right away, no need to start new session
+    - ex : source ~/.bash_profile. (~ : home directory)
+alias : keyboard shortcuts that are created within nano editor. 
+environment variables : variables that can be used across commands and programs and hold information about the environment.
+export : makes variable available to all child sessions
+    - ex : export USER="name"
+        o In terminal : echo $USER
+echo $HOME : returns value of home variable
