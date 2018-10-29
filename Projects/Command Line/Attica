@@ -1,0 +1,66 @@
+$ pwd
+/home/ccuser/workspace/clothing
+$ nano ~/hello.txt
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+Hello
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+Hello
+$ pd
+/home/ccuser/workspace/clothing
+$ lsa
+total 0
+drwxr-xr-x 2 ccuser ccuser 135 Mar  5  2016 .
+drwxr-xr-x 3 ccuser ccuser  38 Oct 29 23:53 ..
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 dresses.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 jackets.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 pants.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 scarves.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 shirts.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 socks.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 sweaters.txt
+$ nano ~/.bash_profile
+$ echo $USER
+
+$ source ~/.bash_profile
+Hello
+$ echo $USER
+Darryn Reinertson
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+Hello
+>> pd
+/home/ccuser/workspace/clothing
+>> lsa
+total 0
+drwxr-xr-x 2 ccuser ccuser 135 Mar  5  2016 .
+drwxr-xr-x 3 ccuser ccuser  38 Oct 29 23:53 ..
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 dresses.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 jackets.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 pants.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 scarves.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 shirts.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 socks.txt
+-rw-r--r-- 1 ccuser ccuser   0 Mar  5  2016 sweaters.txt
+>> echo $HOME
+/home/ccuser
+>> echo $PATH
+/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/ccuser/.gem/ruby/2.3.0/bin:/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/ccuser
+/.gem/ruby/2.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+>> env
+HOSTNAME=69f4408a6ab2
+GEM_HOME=/home/ccuser/.gem/ruby/2.3.0
+TERM=xterm
+USER=Darryn Reinertson
+PATH=/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/ccuser/.gem/ruby/2.3.0/bin:/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/c
+cuser/.gem/ruby/2.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+CODEX_RUNNER_PATH=/var/codecademy/codex/runners
+PWD=/home/ccuser/workspace/clothing
+MPLBACKEND=agg
+TZ=Etc/UTC
+PS1=>>
+SHLVL=1
+HOME=/home/ccuser
+PYTHONPATH=/var/codecademy/runner_contexts/python:
+_=/usr/bin/env
