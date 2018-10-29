@@ -1,0 +1,17 @@
+stdin : standard input, through keyboard or input device
+stdout : Info outputted after process is run
+stderr : error message outputted by failed process
+cat : outputs the contents of a file to the terminal
+> : used to redirect standard output to a file. Will replace contents of 2nd file with first 
+>> : to add contents of first file to 2nd. 
+< : standard input from the file on the right of the sign and inputs it into the program on the left. 
+| : takes standard input from the left and 'pipes' it as standard input to the command on the right. 
+sort : alphabetically 
+uniq : removes adjacent, duplicate lines in a file. (use sort then uniq). 
+grep : 'global regular expression print'. Searches file for lines that match pattern and returns result. 
+    - i : command to be case insensitive. 
+    - R : Searches all files in directory and outputs filenames and lines containing matched results. 
+    - Rl : searchs for only files in directory with matched results. 
+sed : 'stream editor', accepts standard input and modifies it based on expression. "find and replace". 
+    - s : substitute
+    - g : global
