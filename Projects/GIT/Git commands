@@ -1,0 +1,6 @@
+git init : initialize directory
+git status : status of changes. Will have changes to be committed, not staged for commit and untracked files
+git add filename : add file to staging area
+git diff filename : check difference between working directory and staging area
+git commit : permanently stores changes from staging area inside repository
+git log : refer back to earlier version of project. 
