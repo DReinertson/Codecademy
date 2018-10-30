@@ -1,0 +1,79 @@
+$ pwd
+/home/ccuser/workspace/lingua-franca
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+greeting of my choice
+$ nano ~/.bash_profile
+$ source ~/.bash_profiel
+bash: /home/ccuser/.bash_profiel: No such file or directory
+$ source ~/.bash_profile
+greeting of my choice
+$ make translations
+$ dt
+Tue Oct 30 00:01:40 UTC 2018
+$ hst
+    1  pwd
+    2  nano ~/.bash_profile
+    3  source ~/.bash_profile
+    4  nano ~/.bash_profile
+    5  source ~/.bash_profiel
+    6  source ~/.bash_profile
+    7  make translations
+    8  dt
+    9  hst
+$ ls
+arabic.txt   english.txt  hindi.txt     javanese.txt  mandarin.txt  russian.txt  tagalog.txt  thai.txt      vietnamese.txt
+bengali.txt  german.txt   japanese.txt  korean.txt    panjabi.txt   spanish.txt  tamil.txt    translations
+$ less javanese.txt
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+greeting of my choice
+$ less javanese.txt
+$ nano ~/.bash_profile
+$ source ~/.bash_profile
+greeting of my choice
+-> make fun
+-> dt
+Tue Oct 30 00:04:33 UTC 2018
+-> lsa
+bash: lsa: command not found
+-> hst
+    1  pwd
+    2  nano ~/.bash_profile
+    3  source ~/.bash_profile
+    4  nano ~/.bash_profile
+    5  source ~/.bash_profiel
+    6  source ~/.bash_profile
+    7  make translations
+    8  dt
+    9  hst
+   10  ls
+   11  less javanese.txt
+   12  nano ~/.bash_profile
+   13  source ~/.bash_profile
+   14  less javanese.txt
+   15  nano ~/.bash_profile
+   16  source ~/.bash_profile
+   17  make fun
+   18  dt
+   19  lsa
+   20  hst
+-> env
+HOSTNAME=6442befc6c1e
+GEM_HOME=/home/ccuser/.gem/ruby/2.3.0
+TERM=xterm
+PATH=/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/ccuser/.gem/ruby/2.3.0/bin:/home/ccuser/.bin:/home/ccuser/node_modules/.bin:/home/c
+cuser/.gem/ruby/2.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+CODEX_RUNNER_PATH=/var/codecademy/codex/runners
+PWD=/home/ccuser/workspace/lingua-franca
+MPLBACKEND=agg
+TZ=Etc/UTC
+PS1=->
+SHLVL=1
+HOME=/home/ccuser
+LESS=-N
+PYTHONPATH=/var/codecademy/runner_contexts/python:
+_=/usr/bin/env
+-> env |
+> env | grep LESS
+LESS=-N
