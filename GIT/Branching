@@ -1,0 +1,5 @@
+git branch : lists all project branches
+git branch branch_name : create new branch
+git checkout branch_name : switch branches
+git merge branch_name : join file changes between branches
+git branch -d branch_name : delete branch
