@@ -1,0 +1,5 @@
+git clone remote_name clone_name : clones repository
+git remote -v : list of Git project's remotes
+git fetch : See if changes have been made to remote and bring changes to local copy. 
+git merge origin/master : merges remote master with local. 
+git push origin <my_branch_name> : push branch up to remote, for review and potential merge. 
