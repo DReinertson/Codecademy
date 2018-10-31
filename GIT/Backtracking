@@ -1,0 +1,5 @@
+git checkout HEAD filename : discards changes in working directory
+git reset HEAD filename : Unstages file changes
+git reset commit_SHA : resets to previous commit in commit history
+
+Can add multiple files to staging area on single line
